@@ -1,0 +1,37 @@
+{
+  "name": "commitlint-merge",
+  "version": "0.1.0",
+  "description": "GitHub Action that squashes and merges only when commitlint passes",
+  "main": "dist/index.js",
+  "module": "dist/index.min.mjs",
+  "unpkg": "dist/index.umd.min.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist/",
+    "build": "npm run clean && tsc --project tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guangie88/commitlint-merge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guangie88/commitlint-merge/issues"
+  },
+  "homepage": "https://github.com/guangie88/commitlint-merge#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.2",
+    "@actions/github": "^2.1.0"
+  },
+  "devDependencies": {
+    "rollup": "^1.31.1",
+    "terser": "^4.6.3",
+    "typescript": "^3.7.5"
+  }
+}
